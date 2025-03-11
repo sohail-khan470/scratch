@@ -1,0 +1,14 @@
+//signup
+
+{
+  "email": "admin@example.com",
+  "password": "admin123",
+  "roleNames": ["ADMIN", "MODERATOR"]
+}
+
+
+//login
+{
+  "email": "admin@example.com",
+  "password": "admin123"
+}

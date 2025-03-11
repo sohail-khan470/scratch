@@ -1,0 +1,14 @@
+ const { width, height } = await sharp(thumbnailPath).metadata();
+      const tempThumbnailPath = `uploads/temp_${thumbnailName}`;
+      const fileInKb = Math.round(imageFile.size / 1024);
+      // await sharp(thumbnailPath)
+      //   .resize(900, 1800) // Resize thumbnail as needed
+      //   .toFile(thumbnailPath)
+      //   .then((x) => (thumbnailFile = x));
+      // console.log("thumbnailFile", thumbnailFile);
+      await sharp(thumbnailPath)
+        .resize(900, 1800) //set  height to null to maintain aspect ratio
+        .toFile(tempThumbnailPath); // Save to a temporary file
+
+      // Rename the temporary file to the original thumbnail path
+      fs.renameSync(tempThumbnailPath, thumbnailPath);
