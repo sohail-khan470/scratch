@@ -36,7 +36,7 @@ model User {
 model Role {
   id            Int             @id @default(autoincrement())
   name          String          @unique
-  description   String?
+  description   String? 
   users         User[]
   permissions   Permission[]    @relation("RolePermissions")
   createdAt     DateTime        @default(now())
