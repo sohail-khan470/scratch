@@ -1,0 +1,10 @@
+[
+  {
+    "question": "What is Node.js?",
+    "answer": "Node.js is a runtime environment for executing JavaScript on the server."
+  },
+  {
+    "question": "What is Express.js?",
+    "answer": "Express.js is a web application framework for Node.js."
+  }
+]
